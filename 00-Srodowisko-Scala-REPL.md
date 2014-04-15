@@ -1,12 +1,21 @@
-Początki z jakimkolwiek językiem są trudne. Z językiem programowania również. Zakładam, że nie masz żadnego pojęcia o programowaniu, a coś podowiada Ci, że warto przeznaczyć na to trochę czasu. Wybieramy język programowania [Scala](http://scala-lang.org). O powodach później (może nawet wcale).
+Moje pierwsze kroki w języku Scala - środowisko
+===============================================
+Początki nie zawsze należą do najmilszych momentów w naszym życiu. Z nauką programowania jest podobnie.Zakładam, że nie masz żadnego pojęcia o programowaniu, a coś jednak podowiada Ci, że warto przeznaczyć na to trochę czasu. Wybieramy język programowania [Scala](http://scala-lang.org). O powodach później (może nawet wcale).
 
-Do pracy z językiem Scala potrzebne są **wirtualna maszyna Javy** (ang. *JVM*) oraz na początku środowisko nazywane **Scala REPL**, co jest akronimem pierwszych liter angielskich słów, które odpowiadają polskim: wpisz wyrażenie (ang. *Read*), wykonaj je (ang. *Eval*), wyświetl (ang. *Print*) i tak na okrągło (ang. *Loop*). To będzie Twoje środowisko na kilka najbliższych dni, a może nawet i tygodni.
+Do pracy z językiem Scala potrzebne są **wirtualna maszyna Javy** (ang. *JVM*) oraz (na początku) środowisko nazywane **Scala REPL**. REPL jest akronimem pierwszych liter angielskich słów, które odpowiadają polskim: wpisz wyrażenie (ang. *Read*), wykonaj je (ang. *Eval*), wyświetl (ang. *Print*) i tak na okrągło (ang. *Loop*). Jest to najczęściej pierwsze środowisko pracy programisty języka Scala i to również będzie Twoje środowisko na kilka najbliższych tygodni. Nie ma nic przyjemniejszego niż "odpalić" Scala REPL i móc natychmiast przetestować swój pomysł na kolejną wspaniałą aplikację.
 
-Pobierz **Java SE Development Kit 8** z wirtualną maszyną Javy ze [strony producenta Oracle](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html). Należy zaakceptować warunki licencyjne produktu (ang. *Accept License Agreement*) i wcisnąć czerwoną strzałkę z nazwą paczki w wierszu stosownego systemu operacyjnego, np. Mac OS X x64 czy Windows x64. W przypadku wspomnianych systemów - Mac OS czy Windows - instalacja przebiega przez dwukrotne kliknięcie pobranej paczki i przejście kroków instalatora.
+Pobierz **Java SE Development Kit 8** z wirtualną maszyną Javy ze [strony producenta Oracle](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html). Zanim paczka znajdzie się na naszym komputerze, należy zaakceptować warunki licencyjne produktu (ang. *Accept License Agreement*) i wcisnąć komórkę z czerwoną strzałką i nazwą paczki w wierszu odpowiadającemu systemowi operacyjnemu, z którego korzystasz, np. Mac OS X x64 czy Windows x64. W moim przypadku będzie to Mac OS X x64 i takie też znajdziesz tutaj zrzuty ekranu i wycinki z linii poleceń. W przypadku wspomnianych systemów - Mac OS czy Windows - instalacja przebiega przez dwukrotne kliknięcie pobranej paczki i przejście kroków instalatora.
 
-Kolejnym krokiem jest pobranie Scala REPL ze strony http://www.scala-lang.org/. Wciśnij przycisk [DOWNLOAD](http://www.scala-lang.org/download/) i wciśnij `Scala 2.10.4`. 2.10.4 jest najnowszą wersją języka (w tym i Scala REPL).
+Poprawna instalacja pozwoli Ci wykonać polecenie `java -version` z poziomu linii poleceń.
 
-W zależności od systemu operacyjnego sposób instalacji będzie różny, ale we wszystkich przypadkach sprowadza się do rozpakowania pobranego pliku, np. `scala-2.10.4.tgz`, poleceniem `unzip` lub `tar` do dowolnego katalogu, który nazwiemy `SCALA_HOME`.
+    $ java -version
+    java version "1.8.0"
+    Java(TM) SE Runtime Environment (build 1.8.0-b132)
+    Java HotSpot(TM) 64-Bit Server VM (build 25.0-b70, mixed mode)
+
+Kolejnym krokiem jest pobranie paczki dystrybucyjnej Scali ze strony http://www.scala-lang.org/. Wciśnij przycisk [DOWNLOAD](http://www.scala-lang.org/download/), a następnie wciśnij `Scala 2.10.4`. Wersja 2.10.4 jest najnowszą wersją języka Scala, która dostarcza m.in. środowisko Scala REPL.
+
+Bez względu na system operacyjny, z którego korzystasz, sposób instalacji będzie podobny - sprowadza się do rozpakowania pobranego pliku, np. `scala-2.10.4.tgz`, poleceniem `unzip` lub `tar` do wybranego katalogu, którego będziemy od tej pory wskazywać zmienną środowiskową `SCALA_HOME`.
 
     jacek:~/apps
     $ tar -zxf ~/Downloads/scala-2.10.4.tgz
@@ -17,7 +26,7 @@ W zależności od systemu operacyjnego sposób instalacji będzie różny, ale w
     jacek:~/apps
     $ export PATH=$SCALA_HOME/bin:$PATH
 
-Od tej pory wydając polecenie `scala` pojawi się znak zachęty (ang. *prompt*) Scala REPL.
+Od tej pory, kiedykolwiek wydasz polecenie `scala` pojawi się znak zachęty (ang. *prompt*) Scala REPL.
 
     $ scala
     Welcome to Scala version 2.10.4 (Java HotSpot(TM) 64-Bit Server VM, Java 1.8.0).
@@ -25,3 +34,30 @@ Od tej pory wydając polecenie `scala` pojawi się znak zachęty (ang. *prompt*)
     Type :help for more information.
 
     scala>
+
+Gratulacje! Właśnie przygotowałaś swoje nowe miejsce pracy z językiem Scala. Znajomość tego języka pozwoliłaby Ci skorzystać z dobrodziejstw środowiska REPL, ale nie trzymając Cię zbyt długo, zanim nauczysz się Scali, wpisz dowolne wyrażenie matematyczne, które pamiętasz z lekcji matematyki (tylko, proszę, niech to będzie matematyka na poziomie klasy 6 podstawówki - bez różniczek proszę!)
+
+    scala> 1+1
+    res0: Int = 2
+
+Spróbuj kolejne. Niech będzie trochę dłuższe.
+
+    scala> 1+2*3-4%5
+
+Ciekawi mnie, czy znasz wynik tego wyrażenia? 1? 3? 9? Sprawdź.
+
+    scala> 1+2*3-4%5
+    res1: Int = 3
+
+Jak zapewne pamiętasz z lekcji matematyki (i trudno to zapomnieć po tych latach wyrzeczeń nauki), poszczególne składowe powyższego wyrażenia można pogrupować nawiasami.
+
+    scala> (1 + (2 * 3)) - (4 % 5)
+    res2: Int = 3
+
+Poza tym kilka spacji i już wygląda zgrabniej, a i pewnie bardziej znajomo.
+
+Po zakończonej pracy, warto po sobie posprzątać i nie inaczej będzie z naszym środowiskiem pracy - Scala REPL. Wyjście z niego, to wydanie polecenia `:quit`.
+
+    scala> :quit
+
+Właśnie zakończyłaś swój pierwszy dzień z programowaniem w Scali korzystając ze środowiska Scala REPL. Gratulacje postępów!
