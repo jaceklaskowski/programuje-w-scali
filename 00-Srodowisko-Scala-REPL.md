@@ -1,10 +1,10 @@
 Moje pierwsze kroki w języku Scala - środowisko
 ===============================================
-Początki nie zawsze należą do najmilszych momentów w naszym życiu. Z nauką programowania jest podobnie.Zakładam, że nie masz żadnego pojęcia o programowaniu, a coś jednak podowiada Ci, że warto przeznaczyć na to trochę czasu. Wybieramy język programowania [Scala](http://scala-lang.org). O powodach później (może nawet wcale).
+Początki nie zawsze należą do najmilszych momentów w naszym życiu. Z nauką programowania jest podobnie. Zakładam, że nie masz jakiegokolwiek pojęcia o programowaniu, a coś podowiada Ci, że warto przeznaczyć na to trochę czasu. Wybieramy język programowania [Scala](http://scala-lang.org). O powodach później.
 
 Do pracy z językiem Scala potrzebne są **wirtualna maszyna Javy** (ang. *JVM*) oraz (na początku) środowisko nazywane **Scala REPL**. REPL jest akronimem pierwszych liter angielskich słów, które odpowiadają polskim: wpisz wyrażenie (ang. *Read*), wykonaj je (ang. *Eval*), wyświetl (ang. *Print*) i tak na okrągło (ang. *Loop*). Jest to najczęściej pierwsze środowisko pracy programisty języka Scala i to również będzie Twoje środowisko na kilka najbliższych tygodni. Nie ma nic przyjemniejszego niż "odpalić" Scala REPL i móc natychmiast przetestować swój pomysł na kolejną wspaniałą aplikację.
 
-Pobierz **Java SE Development Kit 8** z wirtualną maszyną Javy ze [strony producenta Oracle](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html). Zanim paczka znajdzie się na naszym komputerze, należy zaakceptować warunki licencyjne produktu (ang. *Accept License Agreement*) i wcisnąć komórkę z czerwoną strzałką i nazwą paczki w wierszu odpowiadającemu systemowi operacyjnemu, z którego korzystasz, np. Mac OS X x64 czy Windows x64. W moim przypadku będzie to Mac OS X x64 i takie też znajdziesz tutaj zrzuty ekranu i wycinki z linii poleceń. W przypadku wspomnianych systemów - Mac OS czy Windows - instalacja przebiega przez dwukrotne kliknięcie pobranej paczki i przejście kroków instalatora.
+Pobierz **Java SE Development Kit 8** z wirtualną maszyną Javy ze [strony producenta Oracle](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html). Zanim paczka znajdzie się na Twoim komputerze, należy zaakceptować warunki licencyjne produktu (ang. *Accept License Agreement*) i wcisnąć komórkę z czerwoną strzałką i nazwą paczki w wierszu odpowiadającemu systemowi operacyjnemu, z którego korzystasz, np. Mac OS X x64 czy Windows x64. W moim przypadku będzie to Mac OS X x64 i takie też znajdziesz tutaj zrzuty ekranu i wycinki z linii poleceń. W przypadku wspomnianych systemów - Mac OS czy Windows - instalacja przebiega przez dwukrotne kliknięcie pobranej paczki i przejście kroków instalatora.
 
 Poprawna instalacja pozwoli Ci wykonać polecenie `java -version` z poziomu linii poleceń.
 
@@ -37,6 +37,8 @@ Od tej pory, kiedykolwiek wydasz polecenie `scala` pojawi się znak zachęty (an
 
 Gratulacje! Właśnie przygotowałaś swoje nowe miejsce pracy z językiem Scala. Znajomość tego języka pozwoliłaby Ci skorzystać z dobrodziejstw środowiska REPL, ale nie trzymając Cię zbyt długo, zanim nauczysz się Scali, wpisz dowolne wyrażenie matematyczne, które pamiętasz z lekcji matematyki (tylko, proszę, niech to będzie matematyka na poziomie klasy 6 podstawówki - bez różniczek proszę!)
 
+Mała podpowiedź: po wprowadzeniu wyrażenia zatwierdzasz je wciskając przycisk ENTER.
+
     scala> 1+1
     res0: Int = 2
 
@@ -44,20 +46,22 @@ Spróbuj kolejne. Niech będzie trochę dłuższe.
 
     scala> 1+2*3-4%5
 
-Ciekawi mnie, czy znasz wynik tego wyrażenia? 1? 3? 9? Sprawdź.
+Ciekawi mnie, czy znasz wynik tego wyrażenia? 1? 3? 9? Sprawdź!
 
     scala> 1+2*3-4%5
     res1: Int = 3
 
-Jak zapewne pamiętasz z lekcji matematyki (i trudno to zapomnieć po tych latach wyrzeczeń nauki), poszczególne składowe powyższego wyrażenia można pogrupować nawiasami.
+Jak zapewne pamiętasz z lekcji matematyki (i trudno o tym zapomnieć po tych wszystkich latach wyrzeczeń), poszczególne składowe powyższego wyrażenia można pogrupować nawiasami. Za pomocą nawiasów nadajesz większą ważność operacji matematycznej, która w przeciwnym przypadku byłaby mniejszego znaczenia i obliczana później.
 
     scala> (1 + (2 * 3)) - (4 % 5)
     res2: Int = 3
 
-Poza tym kilka spacji i już wygląda zgrabniej, a i pewnie bardziej znajomo.
+Jak mogłaś zauważyć powyżej, do powyższego wyrażenia dodałem nie tylko nawiasy, ale i odstępy (spacje) między jego elementami, co wygląda zgrabniej, a i być może bardziej znajomo.
 
-Po zakończonej pracy, warto po sobie posprzątać i nie inaczej będzie z naszym środowiskiem pracy - Scala REPL. Wyjście z niego, to wydanie polecenia `:quit`.
+Pozwól sobie na chwilkę ze Scala REPL i sprawdź, jak bardzo Twoja znajomość matematyki pozwala Ci na poprawną pracę w tym środowisku. Ten moment ma oswoić Cię ze Scala REPL, abyś nabrała pewności przed kolejnymi zadaniami.
+
+Po zakończonej pracy, warto po sobie posprzątać. Wyjście ze Scala REPL sprowadza się do wydania polecenia `:quit`.
 
     scala> :quit
 
-Właśnie zakończyłaś swój pierwszy dzień z programowaniem w Scali korzystając ze środowiska Scala REPL. Gratulacje postępów!
+Ta...dam! Właśnie zakończyłaś swój pierwszy dzień z programowaniem w Scali korzystając ze środowiska Scala REPL. Gratulacje postępów!
