@@ -1,5 +1,5 @@
-Moje pierwsze kroki w języku Scala - środowisko
-===============================================
+Środowisko - Dzień 1
+====================
 Początki nie zawsze należą do najmilszych momentów w naszym życiu. Z nauką programowania jest podobnie. Zakładam, że nie masz jakiegokolwiek pojęcia o programowaniu, a coś podowiada Ci, że warto przeznaczyć na to trochę czasu. Wybieramy język programowania [Scala](http://scala-lang.org). O powodach później.
 
 Do pracy z językiem Scala potrzebne są **wirtualna maszyna Javy** (ang. *JVM*) oraz (na początku) środowisko nazywane **Scala REPL**. REPL jest akronimem pierwszych liter angielskich słów, które odpowiadają polskim: wpisz wyrażenie (ang. *Read*), wykonaj je (ang. *Eval*), wyświetl (ang. *Print*) i tak na okrągło (ang. *Loop*). Jest to najczęściej pierwsze środowisko pracy programisty języka Scala i to również będzie Twoje środowisko na kilka najbliższych tygodni. Nie ma nic przyjemniejszego niż "odpalić" Scala REPL i móc natychmiast przetestować swój pomysł na kolejną wspaniałą aplikację.
