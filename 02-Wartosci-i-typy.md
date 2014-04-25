@@ -16,7 +16,7 @@ Zwróć uwagę na odpowiedzi, które REPL wypisuje na ekran, w linii następują
 
 W pierwszym przypadku jest to `f: (x: Int)Int`, podczas gdy w drugim `res0: Int = 2`. Coś mi podpowiada, że drugi przypadek jest prostszy do wyjaśnienia, a mimo wszystko, upieram się przy wyjaśnieniu pierwszego. Trzymam kciuki, że nam się wspólnie uda (bez względu na wybór "problemu").
 
-Jaki był zamysł, kiedy wpisywałaś `def f(x: Int) = x * 2`? Deklaracja funkcji `f`, która akceptuje pojedynczy parametry typu `Int`. Mimo wielu niewyjaśnionych jeszcze kwestii - deklaracja, funkcja, typ - nasz zapis sprowadził się do utworzenia symbolu `f`, który wskazuje na ciało `x * 2`. W ten sposób zamiast wpisywać każdorazowo `x * 2`, możesz korzystać z symbolu `f`.
+Jaki był zamysł, kiedy wpisywałaś `def f(x: Int) = x * 2`? Deklaracja funkcji `f`, która akceptuje pojedynczy parametr typu `Int`. Mimo wielu niewyjaśnionych jeszcze kwestii - deklaracja, funkcja, typ - nasz zapis sprowadził się do utworzenia symbolu `f`, który wskazuje na ciało `x * 2`. W ten sposób zamiast wpisywać każdorazowo `x * 2`, możesz korzystać z symbolu `f`.
 
 	scala> def f(x: Int) = x * 2
 	f: (x: Int)Int
@@ -26,7 +26,7 @@ Jaki był zamysł, kiedy wpisywałaś `def f(x: Int) = x * 2`? Deklaracja funkcj
 
 Przyjrzyjmy się owemu symbolowi `f`. Po dwukropku w języku Scala następuje określenie typu symbolu, który wymiennie będziemy również nazywać wartością.
 
-Wartość `f` jest typu `(x: Int)Int` i jest to specjalny zapis typu funkcyjnego określającego funkcję jednego parametru - przypisanego do kolejnego symbolu `x` typu `Int - która zwraca typ `Int`.
+Wartość `f` jest typu `(x: Int)Int` i jest to specjalny zapis typu funkcyjnego określającego funkcję jednego parametru - przypisanego do kolejnego symbolu `x` typu `Int` - która zwraca typ `Int`.
 
 Ogólna postać funkcji, opisanej przez Scala REPL, będzie wyglądała następująco:
 
