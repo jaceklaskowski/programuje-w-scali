@@ -30,9 +30,9 @@ Wartość `f` jest typu `(x: Int)Int` i jest to specjalny zapis typu funkcyjnego
 
 Ogólna postać funkcji, opisanej przez Scala REPL, będzie wyglądała następująco:
 
-    def [nazwa-funkcji](param1: typ1, param2: typ2)typ3
+    [nazwa-funkcji]: ( [lista-parametrów-z-typami] )typ-wartości-zwracanej
 
-gdzie *nazwa-funkcji* to symbol, którym będziemy się posługiwać do operowania blokiem kodu, który występuje po znaku równości *=*, oraz *paramX* jest nazwą parametru (kolejnego symbolu dostępnego w ramach bloku funkcji) i jego typu *typX*. Po nawiasie okrągłym występuje typ zwracanej wartości z funkcji, np. *typ3*.
+gdzie *nazwa-funkcji* to symbol, którym będziemy się posługiwać do operowania blokiem kodu, który występuje po znaku równości *=*, oraz *lista-parametrów-z-typami* jest listą par - nazwa parametru (kolejnego symbolu dostępnego w ramach bloku funkcji) i jego typu po dwukropku. Po nawiasie okrągłym występuje typ zwracanej wartości z funkcji.
 
 W przypadku drugiego wyrażenia `1+1`, Scala REPL odpowiedział `res0: Int = 2`. W ten sposób zdefiniowałaś symbol `res0` typu `Int` z wartością `2`.
 
