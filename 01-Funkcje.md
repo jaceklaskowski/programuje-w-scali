@@ -18,7 +18,7 @@ Tak zdefiniowaną funkcję można wykonać, podobnie jak w matematyce, wpisując
 
 Funkcje służą zgrupowaniu kilku obliczeń w jedną całość i zamiast pisać wiele wyrażeń wystarczy funkcja.
 
-"Wiele wyrażeń?" - zapytasz? Tak, wielu i mimo, że powyższy przykład tego nie prezentuje, kolejny już tak.
+*"Wiele wyrażeń?"* - zapytasz? Tak, wielu i mimo, że powyższy przykład tego nie prezentuje, kolejny już tak.
 
     scala> def f(x: Int) = {
          |   val y = x * 2
@@ -26,7 +26,7 @@ Funkcje służą zgrupowaniu kilku obliczeń w jedną całość i zamiast pisać
          | }
     f: (x: Int)Int
 
-Zgrupowanie wielu wyrażeń w postaci funkcji odbywa się z pomocą nawiasów klamrowych, które w ten sposób wyznaczają granice zasięgu **ciała funkcji**.
+Zgrupowanie wielu wyrażeń w postaci funkcji odbywa się za pomocą nawiasów klamrowych, które w ten sposób wyznaczają granice zasięgu **ciała funkcji**. Celem funkcji jest nie tylko grupowanie wyrażeń, ale również ich parametryzacja przez argumenty wejściowe funkcji.
 
 Spróbuj ponownie wykonać tę funkcję. Czy domyślasz się wyniku? Poprzedni wynik przyłożenia funkcji `f` do argumentu `2` dał wynik `4`. A jak będzie z powyższą definicją funkcji `f`?
 
