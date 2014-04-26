@@ -26,13 +26,13 @@ Jaki był zamysł, kiedy wpisywałaś `def f(x: Int) = x * 2`? Deklaracja funkcj
 
 Przyjrzyjmy się owemu symbolowi `f`. Po dwukropku w języku Scala następuje określenie typu symbolu, który wymiennie będziemy również nazywać wartością.
 
-Wartość `f` jest typu `(x: Int)Int` i jest to specjalny zapis typu funkcyjnego określającego funkcję jednego parametru - przypisanego do kolejnego symbolu `x` typu `Int` - która zwraca typ `Int`.
+Wartość `f` jest typu `(x: Int)Int` i jest to specjalny (wewnętrzny) zapis typu metody (prawie funkcyjnego) określającego metodę jednego parametru - przypisanego do kolejnego symbolu `x` typu `Int` - która zwraca typ `Int`.
 
-Ogólna postać funkcji, opisanej przez Scala REPL, będzie wyglądała następująco:
+Ogólna postać metody, opisanej przez Scala REPL, będzie wyglądała następująco:
 
-    [nazwa-funkcji]: ( [lista-parametrów-z-typami] )typ-wartości-zwracanej
+    [nazwa-metody]: ( [lista-parametrów-z-typami] )typ-wartości-zwracanej
 
-gdzie *nazwa-funkcji* to symbol, którym będziemy się posługiwać do operowania blokiem kodu, który występuje po znaku równości *=*, oraz *lista-parametrów-z-typami* jest listą par - nazwa parametru (kolejnego symbolu dostępnego w ramach bloku funkcji) i jego typu po dwukropku. Po nawiasie okrągłym występuje typ zwracanej wartości z funkcji.
+gdzie *nazwa-metody* to symbol, którym będziemy się posługiwać do operowania blokiem kodu, który występuje po znaku równości *=*, oraz *lista-parametrów-z-typami* jest listą par - nazwa parametru (kolejnego symbolu dostępnego w ramach bloku funkcji) i jego typu po dwukropku. Po nawiasie okrągłym występuje typ zwracanej wartości z metody.
 
 W przypadku drugiego wyrażenia `1+1`, Scala REPL odpowiedział `res0: Int = 2`. W ten sposób zdefiniowałaś symbol `res0` typu `Int` z wartością `2`.
 
