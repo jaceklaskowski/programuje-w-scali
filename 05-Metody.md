@@ -8,8 +8,8 @@ Weźmy za przykład typ [scala.collection.Seq](http://www.scala-lang.org/api/cur
 
 Utworzenie wartości `Seq` jest możliwe za pomocą metody specjalnej `def apply[A](elems: A*): Seq[A]` w obiekcie `Seq`.
 
-scala> Seq.apply(1, 2, 3)
-res0: Seq[Int] = List(1, 2, 3)
+    scala> Seq.apply(1, 2, 3)
+    res0: Seq[Int] = List(1, 2, 3)
 
 Scala udostępnia *lukier składniowy*, który pozwala na krótszy zapis powyższego wywołania metody `apply`.
 
@@ -22,7 +22,7 @@ Obie nazwy `res0` oraz `res1` odpowiadają sekwencji liczb całkowitych `1`, `2`
 
 Scaladoc dla typu [scala.collection.Seq](http://www.scala-lang.org/api/current/#scala.collection.Seq) udostępnia wiele innych metod, np. `apply(idx: Int): A`, `def length: Int` czy `def count(p: (A) => Boolean): Int`.
 
-Pamiętasz, że `apply(...)` to po prostu `(...)`, a więc wykonanie `apply(idx: Int): A` na `res0` będzie po prostu:
+Pamiętasz, że `apply(...)` to po prostu `(...)`, a więc wykonanie `apply(idx: Int): A` na `res0` sprowadzi się do:
 
     scala> res0(0)
     res2: Int = 1
